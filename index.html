@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VibeTunes | Music Player</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header id="app-header" class="glass-container">
+    <h1 id="app-logo">VibeTunes</h1>
+    <div id="search-container">
+      <input type="text" id="search-input" placeholder="Search songs, artists..." />
+      <span id="search-icon"><i class="fas fa-search"></i></span>
+    </div>
+  </header>
+
+  <!-- Main Player -->
+  <main id="player-section" class="glass-container">
+    <div id="album-cover-container">
+      <img id="album-cover" src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=300&h=300&fit=crop" alt="Album Cover" />
+    </div>
+    <div id="song-info">
+      <h2 id="song-title">Midnight Dreams</h2>
+      <p id="artist-name">Luna Echo</p>
+    </div>
+    <div id="progress-container">
+      <span id="current-time">0:00</span>
+      <div id="progress-bar-wrapper">
+        <div id="progress-bar"></div>
+      </div>
+      <span id="total-time">0:30</span>
+    </div>
+    <div id="controls">
+      <button id="prev-btn" class="control-btn"><i class="fas fa-backward-step"></i></button>
+      <button id="play-pause-btn" class="control-btn main-btn"><i class="fas fa-play"></i></button>
+      <button id="next-btn" class="control-btn"><i class="fas fa-forward-step"></i></button>
+    </div>
+  </main>
+
+  <!-- Favorites Section -->
+  <section id="favorites-section" class="glass-container">
+    <h3 class="section-title"><i class="fas fa-heart"></i> Favorites</h3>
+    <div id="favorites-container" class="tracks-grid">
+      <!-- Dynamic favorite tracks will be inserted here -->
+    </div>
+  </section>
+
+  <!-- Recently Played Section -->
+  <section id="recently-played-section" class="glass-container">
+    <h3 class="section-title"><i class="fas fa-clock-rotate-left"></i> Recently Played</h3>
+    <div id="recently-played-container">
+      <!-- Dynamic recently played tracks will be inserted here -->
+    </div>
+  </section>
+
+  <!-- Top Tracks -->
+  <section id="top-tracks-section" class="glass-container">
+    <h3 class="section-title"><i class="fas fa-music"></i> Top Tracks</h3>
+    <div id="tracks-container" class="tracks-grid">
+      <!-- Dynamic tracks will be inserted here -->
+    </div>
+  </section>
+
+  <!-- Keyboard Shortcuts Info -->
+  <div class="keyboard-info glass-container">
+    <h4>Keyboard Shortcuts</h4>
+    <p>Space: Play/Pause</p>
+    <p>→ : Next Song</p>
+    <p>← : Previous Song</p>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
